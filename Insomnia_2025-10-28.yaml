@@ -1,0 +1,257 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1761173692069
+  modified: 1761173692069
+  description: ""
+collection:
+  - name: pd_hours
+    meta:
+      id: fld_71f7918481b346478ad67c6ff7faf137
+      created: 1761263011197
+      modified: 1761699788000
+      sortKey: -1761263011197
+      description: ""
+    children:
+      - name: employees
+        meta:
+          id: fld_136b22c6150b40469a1c433d779f5571
+          created: 1761400019964
+          modified: 1761400019964
+          sortKey: -1761400019964
+          description: ""
+        children:
+          - url: http://localhost:3000/employee
+            name: get_employees
+            meta:
+              id: req_e88211cca81e4a378ba916a7c553ec26
+              created: 1761263014873
+              modified: 1761401114919
+              isPrivate: false
+              description: ""
+              sortKey: -1761400025174
+            method: GET
+            parameters:
+              - id: pair_a6404bdcaffa47aca8dcd764a3c04331
+                name: ""
+                value: ""
+                description: ""
+                disabled: false
+                type: text
+                multiline: false
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/employee
+            name: create_employee
+            meta:
+              id: req_1cf7b1a58742453ea0cd3deecbdb88c6
+              created: 1761400004043
+              modified: 1761604549857
+              isPrivate: false
+              description: ""
+              sortKey: -1761400025274
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"name": "teste",
+                	"estimatedHours":4,
+                	"squadId":1
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: reports
+        meta:
+          id: fld_b66950b49ab34a30bcbd211e3e958dee
+          created: 1761400154478
+          modified: 1761400154478
+          sortKey: -1761400154478
+          description: ""
+        children:
+          - url: http://localhost:3000/report/squad-hours?squadId=23&startDate=2025-10-01&endDate=2025-10-29
+            name: get_reports
+            meta:
+              id: req_6517a8d5e58d4076afebd5eeaeee6328
+              created: 1761400158611
+              modified: 1761693978772
+              isPrivate: false
+              description: ""
+              sortKey: -1761400158611
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/report
+            name: create_report
+            meta:
+              id: req_25fb1a654f8743b1894ae792dfd36be7
+              created: 1761400396585
+              modified: 1761604363760
+              isPrivate: false
+              description: ""
+              sortKey: -1761400396585
+            method: POST
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "description": "Implementacao do recurso y",
+                  "spentHours": 4,
+                  "employeeId": 9
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/report/squad-average?squadId=23&startDate=2025-10-01&endDate=2025-10-29
+            name: get_average
+            meta:
+              id: req_cac1de9636264d5599e231aed8fb6064
+              created: 1761402958017
+              modified: 1761699696360
+              isPrivate: false
+              description: ""
+              sortKey: -1761400396785
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/report/squad-total?squadId=16&startDate=2025-10-01&endDate=2025-10-27
+            name: get_total_hours
+            meta:
+              id: req_75130389644a43bbba33d4e033e6dbc4
+              created: 1761403054108
+              modified: 1761699678033
+              isPrivate: false
+              description: ""
+              sortKey: -1761400396635
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: squads
+        meta:
+          id: fld_a379417c35d14903854079b9455e36da
+          created: 1761400993544
+          modified: 1761400993544
+          sortKey: -1761400993544
+          description: ""
+        children:
+          - url: http://localhost:3000/squad
+            name: get_squads
+            meta:
+              id: req_8a88325458374eb3b51c8ee83301c88c
+              created: 1761400996464
+              modified: 1761521341509
+              isPrivate: false
+              description: ""
+              sortKey: -1761400996464
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/squad
+            name: create_squad
+            meta:
+              id: req_c64cdc550e454c2998ceda592a35c03d
+              created: 1761401032294
+              modified: 1761401094322
+              isPrivate: false
+              description: ""
+              sortKey: -1761401032294
+            method: POST
+            body:
+              mimeType: application/json
+              text: |
+                {
+                  "name": "Teste 3"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.2
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1761173700334
+    modified: 1761173700334
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1761173700333
+    modified: 1761173700333
+    isPrivate: false
