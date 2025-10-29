@@ -65,7 +65,7 @@ http://localhost:3000
 
 ---
 
-##Criar um arquivo .env na pasta /backend
+## Criar um arquivo .env na pasta /backend
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=<SUA_SENHA>
