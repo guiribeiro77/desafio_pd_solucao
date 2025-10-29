@@ -64,13 +64,19 @@ Servidor ativo em:
 http://localhost:3000
 
 ---
-Criar um arquivo .env
+## 🔐 Arquivo `.env`
+
+Crie um arquivo chamado **`.env`** dentro da pasta **`backend/`**, com o seguinte conteúdo:
+
+
+# Configurações do Banco de Dados
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=<SUA_SENHA>
 DB_NAME=pd_hours
-PORT=3000
 
+# Porta do servidor
+PORT=3000
 ---
 
 ## 🧠 Endpoints principais
